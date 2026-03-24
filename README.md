@@ -34,3 +34,15 @@ Clone the Repository
    python student_performance_prediction.py  
 
 This will start the model, make predictions, and classify students as "Pass" or "Fail" based on the predicted marks.
+
+### How to Run the Project :-  
+Ensure that the dependencies are installed.  
+
+In the project folder, run the Python script:  
+
+python student_performance_prediction.py  
+1) The script will:  
+2) Load the dataset.  
+3) Train a Linear Regression model to predict students' marks.  
+4) Use a threshold of 40 to classify students as Pass or Fail.  
+5) Print the predicted marks and the classification for each student.  
