@@ -3,6 +3,18 @@
 ### What the project does :-  
 The student performance predictor predicts how well a student will perform based on factors like attendance, previous grades, study hours, and class participation. It predicts the student's marks and then classifies the result as a Pass or Fail , using a Linear Regression model. The passing marks for a student is set at 40 marks. This project shows how machine learning works by preparing the data, training the model, making predictions, and deciding if students pass or fail based on those predictions.
 
+### Features :-  
+Predicts students' marks based on their attendance, previous grades, study hours, and participation.  
+Classifies students as Pass or Fail based on predicted marks with a threshold of 40 marks.  
+Uses Linear Regression to model the relationship between the features and the target (marks).  
+Scales features using StandardScaler for better model performance.  
+### Technologies Used :-  
+Python 3.X  
+pandas: For data manipulation and analysis.  
+numpy: For numerical computations.  
+scikit-learn: For machine learning algorithms and preprocessing.  
+matplotlib (Optional): For visualization (if added later).  
+
 ### How to set up the project :-  
 To get this project up and running on your local machine, follow these steps:  
 Clone the Repository  
