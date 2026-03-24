@@ -25,12 +25,12 @@ Clone the Repository
    On macOS/Linux:  
    source venv/bin/activate
 
-5) Install the Dependencies
-   Install all the required libraries:
-   pip install -r requirements.txt
+5) Install the Dependencies  
+   Install all the required libraries:  
+   pip install -r requirements.txt  
 
-6) Run the Script
-   Once everything is set up, run the main Python script:
-   python student_performance_prediction.py
+6) Run the Script  
+   Once everything is set up, run the main Python script:  
+   python student_performance_prediction.py  
 
 This will start the model, make predictions, and classify students as "Pass" or "Fail" based on the predicted marks.
