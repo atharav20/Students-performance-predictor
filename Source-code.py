@@ -4,13 +4,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 
-data = {
-    'attendance': [95, 80, 70, 90, 60, 85, 78, 92, 67, 80],
+data = {'attendance': [95, 80, 70, 90, 60, 85, 78, 92, 67, 80],
     'previous_grades': [85, 70, 75, 88, 65, 90, 80, 85, 78, 72],
     'study_hours': [10, 8, 6, 12, 4, 14, 7, 11, 5, 9],
     'participation': [9, 6, 7, 9, 5, 10, 8, 9, 6, 7],
-    'marks': [90, 55, 60, 92, 50, 95, 78, 85, 62, 70]  
-}
+    'marks': [90, 55, 60, 92, 50, 95, 78, 85, 62, 70]  }
 
 df = pd.DataFrame(data)
 
