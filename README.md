@@ -57,4 +57,8 @@ python student_performance_prediction.py
 2) Load the dataset.  
 3) Train a Linear Regression model to predict students' marks.  
 4) Use a threshold of 40 to classify students as Pass or Fail.  
-5) Print the predicted marks and the classification for each student.  
+5) Print the predicted marks and the classification for each student.
+
+### Developed By:-  
+Name: Atharav Balaji Khonde  
+Registration no:- 25BAI10734
