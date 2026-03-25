@@ -36,8 +36,7 @@ user_data_scaled = scaler.transform(user_data)
 predicted_marks = marks_model.predict(user_data_scaled)[0]
 
 
-for predicted_marks in y_marks_pred:
-    if predicted_marks < 40:
-        print(f"Predicted Marks: {predicted_marks:.2f} -> Fail")
-    else:
-        print(f"Predicted Marks: {predicted_marks:.2f} -> Pass")
+if predicted_marks < 40:
+    print(f"Predicted Marks: {predicted_marks:.2f} -> Fail")
+else:
+    print(f"Predicted Marks: {predicted_marks:.2f} -> Pass")
