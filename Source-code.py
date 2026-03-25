@@ -24,6 +24,13 @@ X_test_scaled = scaler.transform(X_test)
 marks_model = LinearRegression()
 marks_model.fit(X_train_scaled, y_train)
 
+print("\nEnter student details to predict marks:")
+
+attendance = float(input("Attendance (%): "))
+previous_grades = float(input("Previous Grades: "))
+study_hours = float(input("Study Hours: "))
+participation = float(input("Participation (1-10): "))
+
 y_marks_pred = marks_model.predict(X_test_scaled)
 
 for predicted_marks in y_marks_pred:
