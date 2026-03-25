@@ -31,7 +31,10 @@ previous_grades = float(input("Previous Grades: "))
 study_hours = float(input("Study Hours: "))
 participation = float(input("Participation (1-10): "))
 
-y_marks_pred = marks_model.predict(X_test_scaled)
+user_data = np.array([[attendance, previous_grades, study_hours, participation]])
+user_data_scaled = scaler.transform(user_data)
+predicted_marks = marks_model.predict(user_data_scaled)[0]
+
 
 for predicted_marks in y_marks_pred:
     if predicted_marks < 40:
