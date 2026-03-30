@@ -1,13 +1,13 @@
 # Students-performance-predictor
 
 ### What the project does :-  
-The student performance predictor predicts how well a student will perform based on factors like attendance, previous grades, study hours, and class participation. It predicts the student's marks and then classifies the result as a Pass or Fail , using a Linear Regression model. The passing marks for a student is set at 40 marks. This project shows how machine learning works by preparing the data, training the model, making predictions, and deciding if students pass or fail based on those predictions.
+The student performance predictor is a tool that tells us how well a student will do in their studies,it takes into consideration factors like attendance,previous marks,studyhours etc,the student performance predictor then guesses what marks the student will get and says if they pass or fail. It uses Linear Regression to guess wheter student is pass or fail,to pass a student needs to get least 40 marks,and it uses the concept of machine learning.
 
 ### Features :-  
-Predicts students' marks based on their attendance, previous grades, study hours, and participation.  
-Classifies students as Pass or Fail based on predicted marks with a threshold of 40 marks.  
-Uses Linear Regression to model the relationship between the features and the target (marks).  
-Scales features using StandardScaler for better model performance.  
+This model using features like attendance,previous marks,studyhours etc predicts students marks.  
+Then using predicted marks students are classified as pass or fail bu sing 40 marks criteria.  
+This model uses linear regression to make relationship between the features and the target (marks).  
+For better model performance it uses stabdarscaler to scale features.  
 ### Technologies Used :-  
 Python 3.X  
 pandas: For data manipulation and analysis.  
@@ -16,25 +16,25 @@ scikit-learn: For machine learning algorithms and preprocessing.
 matplotlib (Optional): For visualization (if added later).  
 
 ### How to set up the project :-  
-To get this project up and running on your local machine, follow these steps:  
-Clone the Repository  
-1) First, clone the project to your local machine:  
+To set up the up this project on your local computer follow the given steps :  
+First Clone the Repository  
+1) Clone the project on your local computer first by writing the following command on your computer :  
    git clone https://github.com/your-username/student-performance-prediction.git
 
-2) Navigate to the Project Folder  
-   Go into the project directory:  
+2) Then navigate to the Project Folder  
+   By Going into the project directory:  
    cd student-performance-prediction  
 
 3) Create a Virtual Environment (Optional but recommended)  
-   It’s a good practice to create a virtual environment to manage dependencies:
+   To manage dependencies it is beter to create virtual enviroment on your computer:
    python -m venv venv
 
-4) Activate the Virtual Environment  
+4) On your computer activate the virtual Environment:    
 
-   On Windows:  
+   On Windows type this command:  
    .\venv\Scripts\activate
 
-   On macOS/Linux:  
+   On macOS/Linux type this command:  
    source venv/bin/activate
 
 5) Install the Dependencies  
@@ -42,23 +42,22 @@ Clone the Repository
    pip install -r requirements.txt  
 
 6) Run the Script  
-   Once everything is set up, run the main Python script:  
+   Now run the main python script , once everything is done:    
    python student_performance_prediction.py  
 
-This will start the model, make predictions, and classify students as "Pass" or "Fail" based on the predicted marks.
+After these steps model will be started , it will make predictions on students marks and classify them as pass or fail
 
 ### How to Run the Project :-  
-Ensure that the dependencies are installed.  
+First ensure that all the dependencies which are mentioned above are installed in your computer  
 
-In the project folder, run the Python script:  
+Then in your project folder, run the given Python script:  
 
 python student_performance_prediction.py  
-1) The script will:  
-2) Load the dataset.  
-3) Train a Linear Regression model to predict students' marks.  
-4) Use a threshold of 40 to classify students as Pass or Fail.  
-5) Print the predicted marks and the classification for each student.
-
+1) Then this script will:    
+2) First load the dataset.    
+3) Then to predict student's marks it will train a linear regression model.    
+4) Then it will classify students as pass or fail by using the criteria of 40.
+5) It will then print for each student  the predicted marks and the pass and fail classification.
 ### Developed By:-  
 Name: Atharav Balaji Khonde  
 Registration no:- 25BAI10734
