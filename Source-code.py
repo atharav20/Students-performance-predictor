@@ -18,11 +18,11 @@ y = df['marks']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
 
-marks_model = LinearRegression()
-marks_model.fit(X_train_scaled, y_train)
+model = LinearRegression()
+model.fit(X_train, y_train)
 
 print("\nEnter student details to predict marks:")
 
@@ -33,7 +33,7 @@ participation = float(input("Participation (1-10): "))
 
 user_data = np.array([[attendance, previous_grades, study_hours, participation]])
 user_data_scaled = scaler.transform(user_data)
-predicted_marks = marks_model.predict(user_data_scaled)[0]
+predicted_marks = model.predict(user_data_scaled)[0]
 
 
 if predicted_marks < 40:
